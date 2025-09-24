@@ -1,4 +1,4 @@
-#!/bin/sh
+57428u57362u#!/bin/sh
 
 home_dir="/home/$(whoami)"
 
@@ -72,3 +72,6 @@ done
 # Fontconfig
 rm -r "$home_dir/.config/fontconfig"; mkdir "$home_dir/.config/fontconfig"
 ln -s "$home_dir/.dotfiles/fontconfig/fonts.conf" "$home_dir/.config/fontconfig/fonts.conf"
+
+# xdg-user-dirs
+rm $home_dir/.config/user-dirs.dirs; cp $home_dir/.config/gruvland/dotfiles/extras/user-dirs.dirs $home_dir/.config/user-dirs.dirs

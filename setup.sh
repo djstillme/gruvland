@@ -42,7 +42,7 @@ main_packages=(
     pamixer                    # dependency for clicking on waybar tools
     noto-fonts-emoji           # emoji font
     file-roller                # archive manager
-    calcurse                   # calendar
+    lazyorg                    # calendar
     rofi-wayland               # dynamic window manager
     caligula                   # tool for easily creating bootable USB
     wf-recorder                # lightweight screen-recorder
@@ -52,6 +52,7 @@ main_packages=(
     noto-fonts-cjk             # font for viewing Chinese, Japanese, Korean text\
     libsass                    # dependency for gruvbox GTK theme
     sassc				       # dependency for gruvbox GTK theme
+    xdg-user-dirs              # manages home folder structure
 )
 
 
@@ -163,7 +164,7 @@ mkdir -p ~/.dotfiles && cd ~/.config/gruvland/dotfiles && cp -r * ~/.dotfiles
 chmod +x --noconfirm ~/.config/gruvland/scripts/symlink.sh && sh ~/.config/gruvland/scripts/symlink.sh && echo "dotfiles linked!"
 gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox-Material-Dark"
 gsettings set org.gnome.desktop.interface icon-theme "Gruvbox-Material-Dark"
-gsettings set org.gnome.desktop.interface cursor-theme "Capitaine Cursors (Gruvbox)"
+gsettings set org.gnome.desktop.interface cursor-theme "Gruvboxcursor"
 gsettings set org.gnome.desktop.interface cursor-size 24
 
 #--------------------------------------------------------------------------------------------------#
@@ -180,6 +181,8 @@ sh ~/.config/gruvland/scripts/monitor.sh
 sh ~/.config/gruvland/scripts/timezone.sh
 
 sh ~/.config/gruvland/scripts/keyboard-selector.sh
+
+mkdir ~/local ~/archive ~/sync
 
 ### Script is done ###
 echo -e "$NOTE - Script had completed, reboot your system now!"

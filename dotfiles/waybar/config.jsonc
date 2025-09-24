@@ -107,7 +107,7 @@
   "clock": {
     "format": "{:%H\n%M}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "on-click": "kitty calcurse",
+    "on-click": "kitty lazyorg",
     "calendar": {
       "mode": "month",
       "mode-mon-col": 3,
@@ -162,6 +162,7 @@
     "format": "🇺🇸",
     "tooltip": false,
     "on-click": "~/.config/gruvland/scripts/flag.sh",
+    "on-click-right": "kitty ~/.config/gruvland/scripts/keyboard-selector.sh",
     "signal": 8
   },
     "custom/swaync": {
