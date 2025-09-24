@@ -1,0 +1,113 @@
+/*
+          _                         _
+__      _| | ___   __ _  ___  _   _| |_
+\ \ /\ / / |/ _ \ / _` |/ _ \| | | | __|
+ \ V  V /| | (_) | (_| | (_) | |_| | |_
+  \_/\_/ |_|\___/ \__, |\___/ \__,_|\__|
+                  |___/
+
+by Stephan Raabe (2023)
+-----------------------------------------------------
+*/
+
+/* -----------------------------------------------------
+ * Import Pywal colors
+ * ----------------------------------------------------- */
+
+/* -----------------------------------------------------
+ * General
+ * ----------------------------------------------------- */
+
+* {
+    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    background-image: none;
+    transition: 20ms;
+    box-shadow: none;
+}
+
+window {
+    background: rgba(0, 0, 0, 0.5); /* 50% black, 50% transparent */
+    font-size: 16pt;
+    color: #ebdbb2; /* Gruvbox light text */
+}
+
+/* General Button Styling */
+button {
+    min-width: 120px;
+    min-height: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    background-color: rgba(242, 229, 188, 0.15); /* Gruvbox cream w/ transparency */
+    animation: gradient_f 20s ease-in infinite;
+    border-radius: 80px;
+    border: 2px solid #fabd2f; /* Gruvbox yellow */
+    color: #ffffff; /* White text */
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682),
+                box-shadow 0.2s ease-in-out,
+                background-color 0.2s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #fabd2f; /* Optional: keep consistent */
+}
+
+
+/* Hover effect using Gruvbox accents */
+button:hover {
+    background-color: #fabd2f; /* Gruvbox yellow/orange */
+    opacity: 0.8;
+    color: #282828; /* Gruvbox dark */
+    background-size: 30%;
+    margin: 30px;
+    border-radius: 80px;
+    box-shadow: 0 0 50px #fe8019; /* Gruvbox orange glow */
+}
+
+button span {
+    font-size: 1.2em;
+}
+
+/*
+-----------------------------------------------------
+Buttons
+-----------------------------------------------------
+*/
+
+#lock {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("icons/lock.png"));
+}
+
+#logout {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("icons/logout.png"));
+}
+
+#suspend {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("icons/suspend.png"));
+}
+
+#hibernate {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("icons/hibernate.png"));
+}
+
+#shutdown {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("icons/shutdown.png"));
+}
+
+#reboot {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("icons/reboot.png"));
+}

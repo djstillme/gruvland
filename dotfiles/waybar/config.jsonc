@@ -1,0 +1,174 @@
+{
+  "layer": "top",
+  "position": "right",
+  "width": 40,
+  "margin": "5 2 5 0",
+  "modules-left": [
+    "custom/distro",
+    "hyprland/workspaces",
+    "group/audio-tray-group"
+  ],
+  "modules-right": [
+    "group/tray-group",
+    "group/together",
+    "group/power",
+    "custom/flag"
+  ],
+  "custom/distro": {
+    "format": "󰣇",
+    "tooltip": false,
+    "on-click": "wlogout --css ~/.dotfiles/wlogout/style.css --layout ~/.dotfiles/wlogout/layout"
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "format-icons": {
+      "1": "α",
+      "2": "β",
+      "3": "γ",
+      "4": "δ",
+      "5": "ε",
+      "6": "ζ",
+      "7": "ξ",
+      "8": "θ",
+      "9": "λ",
+      "10": "ψ"
+    }
+  },
+  "group/audio-tray-group": {
+    "orientation": "vertical",
+    "modules": [
+      "custom/dmark",
+      "pulseaudio",
+      "pulseaudio#microphone",
+      "custom/swaync"
+    ],
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "child-audio-tray",
+      "transition-left-to-right": false
+    }
+  },
+  "custom/dmark": {
+    "format": "",
+    "tooltip": false
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", ""]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "kitty pulsemixer",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+    "tooltip": false
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "󰍬",
+    "format-source-muted": "󰍭",
+    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "on-click-right": "kitty pulsemixer",
+    "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +5%",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%",
+    "tooltip": false
+  },
+  "group/tray-group": {
+    "orientation": "vertical",
+    "modules": [
+      "custom/mark",
+      "tray"
+    ],
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "child-tray",
+      "transition-left-to-right": false
+    }
+  },
+  "custom/mark": {
+    "format": "",
+    "tooltip": false
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 8,
+    "show-passive-items": true,
+    "reverse-direction": true,
+    "tooltip": false
+  },
+  "group/together": {
+    "modules": [
+      "clock"
+    ]
+  },
+  "clock": {
+    "format": "{:%H\n%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "on-click": "kitty calcurse",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "today": "<span color='#a6e3a1'><b><u>{}</u></b></span>"
+      }
+    },
+    "tooltip": false
+  },
+  "group/power": {
+    "modules": [
+      "battery",
+      "power-profiles-daemon"
+    ]
+  },
+  "battery": {
+    "rotate": 270,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}",
+    "format-charging": "{icon}",
+    "format-full": "<span color='#82A55F'><b>{icon}</b></span>",
+    "format-icons": [
+      "󰁻",
+      "󰁼",
+      "󰁾",
+      "󰂀",
+      "󰂂",
+      "󰁹"
+    ],
+    "tooltip-format": "{timeTo} {capacity} % | {power} W"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "<span color='#B37F34'><small></small></span>",
+      "balanced": "<span><small> </small></span>",
+      "power-saver": "<span color='#a6e3a1'><small></small></span>"
+    }
+  },
+  "custom/flag": {
+    "interval": 300,
+    "format": "🇺🇸",
+    "tooltip": false,
+    "on-click": "~/.config/gruvland/scripts/flag.sh",
+    "signal": 8
+  },
+    "custom/swaync": {
+    "interval": 300,
+    "format": "󰂚",
+    "tooltip": false,
+    "on-click": "swaync-client -t -sw",
+    "signal": 8
+  }
+}

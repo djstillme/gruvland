@@ -1,0 +1,78 @@
+/* System Wide Colors */
+
+:root {
+  /* Gruvbox Dark Palette */
+
+  /* Dark shades */
+  --gruvbox-dark0-hard:   #1d2021;
+  --gruvbox-dark0:        #282828;
+  --gruvbox-dark0-soft:   #32302f;
+
+  --gruvbox-dark1:        #3c3836;
+  --gruvbox-dark2:        #504945;
+  --gruvbox-dark3:        #665c54;
+  --gruvbox-dark4:        #7c6f64;
+
+  /* Light shades */
+  --gruvbox-light0-hard:  #f9f5d7;
+  --gruvbox-light0:       #fbf1c7;
+  --gruvbox-light0-soft:  #f2e5bc;
+
+  --gruvbox-light1:       #ebdbb2;
+  --gruvbox-light2:       #d5c4a1;
+  --gruvbox-light3:       #bdae93;
+  --gruvbox-light4:       #a89984;
+
+  /* Bright colors */
+  --gruvbox-bright-red:   #fb4934;
+  --gruvbox-bright-green: #b8bb26;
+  --gruvbox-bright-yellow:#fabd2f;
+  --gruvbox-bright-blue:  #83a598;
+  --gruvbox-bright-purple:#d3869b;
+  --gruvbox-bright-aqua:  #8ec07c;
+  --gruvbox-bright-orange:#fe8019;
+
+  /* Neutral colors */
+  --gruvbox-neutral-red:   #cc241d;
+  --gruvbox-neutral-green: #98971a;
+  --gruvbox-neutral-yellow:#d79921;
+  --gruvbox-neutral-blue:  #458588;
+  --gruvbox-neutral-purple:#b16286;
+  --gruvbox-neutral-aqua:  #689d6a;
+  --gruvbox-neutral-orange:#d65d0e;
+
+  /* Faded colors */
+  --gruvbox-faded-red:     #9d0006;
+  --gruvbox-faded-green:   #79740e;
+  --gruvbox-faded-yellow:  #b57614;
+  --gruvbox-faded-blue:    #076678;
+  --gruvbox-faded-purple:  #8f3f71;
+  --gruvbox-faded-aqua:    #427b58;
+  --gruvbox-faded-orange:  #af3a03;
+
+  /* Gruvvy Color Palette */
+  --gruvvy-light-charcoal: #222222;
+  --gruvvy-charcoal: #1c1c1c;
+  --gruvvy-onyx: #101010;
+  --gruvvy-obsidian: #151515;
+  --gruvvy-graphite: #444444;
+  --gruvvy-dark-gray: #666666;
+  --gruvvy-light-gray: #c2c2b0;
+  --gruvvy-marble: #eaeaea;
+  --gruvvy-river: #1f3a5f;
+  --gruvvy-sky: #87CEEB;
+  --gruvvy-forest: #242d1d;
+  --gruvvy-moss: #2f361f;
+  --gruvvy-olive: #43492a;
+  --gruvvy-eucalyptus: #5f875f;
+  --gruvvy-reseda: #78834b;
+  --gruvvy-walnut: #685742;
+  --gruvvy-tangerine: #fd9720;
+  --gruvvy-copper: #bb7744;
+  --gruvvy-cedar: #b36d43;
+  --gruvvy-terracota: #c86448;
+  --gruvvy-fire: #661010;
+  --gruvvy-lemon: #fbec9f;
+  --gruvvy-ecru: #d7c483;
+  --gruvvy-brass: #c9a554;
+}

@@ -1,0 +1,8 @@
+[mgr]
+show_hidden = true  # show hidden files
+ratio = [1, 2, 4]   # size of windows
+
+[preview]
+image = true        # show image previews
+max_width = 1600    # image width
+max_height = 1600   # image height
