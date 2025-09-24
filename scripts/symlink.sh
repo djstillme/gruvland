@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 home_dir="/home/$(whoami)"
 

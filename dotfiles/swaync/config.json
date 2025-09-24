@@ -64,8 +64,8 @@
                     "command": "kitty impala"
                 },
                 {
-                    "label": " Speedtest",
-                    "command": "kitty toipe"
+                    "label": "󱊞 Image Disk",
+                    "command": "~/.config/gruvland/scripts/caligula.sh"
                 },
                 {
                     "label": "󰃼 ScreenRecord",

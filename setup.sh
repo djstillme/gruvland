@@ -31,7 +31,7 @@ main_packages=(
     brightnessctl              # program to adjust screen brightness
     grim                       # wayland screenshot utility
     slurp                      # screen capture program (used alongside grim)
-    yazi                       # TUI file manager
+    thunar                     # GUI file manager
     btop                       # system monitoring
     pulsemixer                 # volume mixer
     ttf-jetbrains-mono-nerd    # emojis and fonts
@@ -44,11 +44,12 @@ main_packages=(
     file-roller                # archive manager
     calcurse                   # calendar
     rofi-wayland               # dynamic window manager
-    toipe                      # typeracer in terminal
+    caligula                   # tool for easily creating bootable USB
     wf-recorder                # lightweight screen-recorder
     impala                     # minimal wifi interface
     hyprpicker                 # color picker
     micro                      # text editor
+    noto-fonts-cjk             # font for viewing Chinese, Japanese, Korean text
 )
 
 
@@ -158,7 +159,7 @@ paru -R --noconfirm xdg-desktop-portal-gnome xdg-desktop-portal-gtk &>> $INSTLOG
 ### Copy Config Files ###
 mkdir -p ~/.dotfiles && cd ~/.config/gruvland/dotfiles && cp -r * ~/.dotfiles
 chmod +x --noconfirm ~/.config/gruvland/scripts/symlink.sh && sh ~/.config/gruvland/scripts/symlink.sh && echo "dotfiles linked!"
-gsettings set org.gnome.desktop.interface gtk-theme "Everforest-Dark"
+gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox"
 gsettings set org.gnome.desktop.interface icon-theme "Zafiro-Nord-Dark-Grey"
 
 #--------------------------------------------------------------------------------------------------#
@@ -173,6 +174,8 @@ sh ~/.config/gruvland/scripts/symlink.sh
 sh ~/.config/gruvland/scripts/monitor.sh
 
 sh ~/.config/gruvland/scripts/timezone.sh
+
+sh ~/.config/gruvland/scripts/keyboard-selector.sh
 
 ### Script is done ###
 echo -e "$NOTE - Script had completed, reboot your system now!"

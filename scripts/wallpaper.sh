@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 directory=~/.config/gruvland/dotfiles/extras/wallpapers
 monitor=$(hyprctl monitors | grep Monitor | awk '{print $2}')
