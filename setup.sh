@@ -49,7 +49,9 @@ main_packages=(
     impala                     # minimal wifi interface
     hyprpicker                 # color picker
     micro                      # text editor
-    noto-fonts-cjk             # font for viewing Chinese, Japanese, Korean text
+    noto-fonts-cjk             # font for viewing Chinese, Japanese, Korean text\
+    libsass                    # dependency for gruvbox GTK theme
+    sassc				       # dependency for gruvbox GTK theme
 )
 
 
@@ -159,8 +161,8 @@ paru -R --noconfirm xdg-desktop-portal-gnome xdg-desktop-portal-gtk &>> $INSTLOG
 ### Copy Config Files ###
 mkdir -p ~/.dotfiles && cd ~/.config/gruvland/dotfiles && cp -r * ~/.dotfiles
 chmod +x --noconfirm ~/.config/gruvland/scripts/symlink.sh && sh ~/.config/gruvland/scripts/symlink.sh && echo "dotfiles linked!"
-gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox"
-gsettings set org.gnome.desktop.interface icon-theme "Zafiro-Nord-Dark-Grey"
+gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox-Material-Dark"
+gsettings set org.gnome.desktop.interface icon-theme "Gruvbox-Material-Dark"
 
 #--------------------------------------------------------------------------------------------------#
 

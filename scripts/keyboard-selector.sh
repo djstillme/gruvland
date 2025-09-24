@@ -201,8 +201,8 @@ layouts_string=$(IFS=', '; echo "${layouts[*]}")
 
 if [[ -f "$hyprland_conf" ]]; then
     # Replace line 26 with the new keyboard layouts
-    sed -i "35s/.*/    kb_layout = $layouts_string/" "$hyprland_conf"
-    echo "✅ Updated $hyprland_conf line 35 with: kb_layout = $layouts_string"
+    sed -i "26s/.*/    kb_layout = $layouts_string/" "$hyprland_conf"
+    echo "✅ Updated $hyprland_conf line 26 with: kb_layout = $layouts_string"
 else
     echo "⚠️  Warning: $hyprland_conf not found. You'll need to manually add:"
     echo "    kb_layout = $layouts_string"
