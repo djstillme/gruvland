@@ -141,7 +141,7 @@ echo
 echo "Creating keyboard layout switcher script..."
 
 # Set output filename
-output_file="flag.sh"
+output_file="~/.config/gruvland/scripts/flag.sh"
 
 # Generate the script
 cat > "$output_file" << 'EOF'

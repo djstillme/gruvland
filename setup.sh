@@ -163,6 +163,8 @@ mkdir -p ~/.dotfiles && cd ~/.config/gruvland/dotfiles && cp -r * ~/.dotfiles
 chmod +x --noconfirm ~/.config/gruvland/scripts/symlink.sh && sh ~/.config/gruvland/scripts/symlink.sh && echo "dotfiles linked!"
 gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox-Material-Dark"
 gsettings set org.gnome.desktop.interface icon-theme "Gruvbox-Material-Dark"
+gsettings set org.gnome.desktop.interface cursor-theme "Capitaine Cursors (Gruvbox)"
+gsettings set org.gnome.desktop.interface cursor-size 24
 
 #--------------------------------------------------------------------------------------------------#
 
